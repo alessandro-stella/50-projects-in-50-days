@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <title>Double Verical Slider</title>
+    </head>
+
+    <body>
+        <div id="main">
+            <div id="description">
+                <div class="section">
+                    <div class="title">Sashimi</div>
+                    oaeirhuohaiuegio
+                </div>
+                
+                <div class="section">
+                    <div class="title">California Roll</div>
+                </div>
+                
+                <div class="section">
+                    <div class="title">Nigiri</div>
+                </div>
+            </div>
+
+            <div id="images">
+                <img src="media/nigiri.jpg" alt="">
+                <img src="media/roll.jpg" alt="">
+                <img src="media/sashimi.jpg" alt="">
+            </div>
+
+            <div id="buttonsContainer">
+                <div class="buttons">
+                    <div class="btn empty"></div>
+                    <div id="up" class="arrow" onclick="moveImage('up')"><img src="media/arrow.svg" alt=""></div>
+                    <div id="down" class="arrow" onclick="moveImage('down')"><img src="media/arrow.svg" alt=""></div>
+                    <div class="btn empty"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

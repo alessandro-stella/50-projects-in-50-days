@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --check: "hsl(350, 70%, 50%)";
+    --check: "hsl(299, 70%, 50%)";
+    --check: "hsl(270, 70%, 54%)";
+    --check: "hsl(211, 70%, 50%)";
+    --check: "hsl(64, 100%, 50%)";
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+#root {
+    height: 100%;
+    background-color: hsl(0, 0%, 5%);
+
+    display: grid;
+    place-items: center;
+}
+
+#table {
+    background-color: hsl(0, 0%, 10%);
+
+    height: min-content;
+    width: min-content;
+    padding: 0.125em;
+
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(30, 1fr);
+
+    gap: 0.125em;
+}
+
+.cell {
+    background-color: hsl(0, 0%, 20%);
+
+    width: 1.5em;
+    height: 1.5em;
+
+    cursor: pointer;
+
+    transition: 1s ease-in;
+}
+
+.cell:hover {
+    transition-duration: 0s;
+}

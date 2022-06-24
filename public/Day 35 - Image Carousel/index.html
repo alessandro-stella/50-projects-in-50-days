@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+        <title>Image Carousel</title>
+    </head>
+
+    <body>
+        <div id="root">
+            <div id="imageContainer">
+                <img src="phoenix.png" alt="phoenix" style="right: 0em" />
+                <img src="reina.png" alt="reina" style="right: 0em" />
+                <img src="jett.png" alt="jett" style="right: 0em" />
+                <img src="killjoy.png" alt="killjoy" style="right: 0em" />
+                <img src="cypher.png" alt="cypher" style="right: 0em" />
+            </div>
+
+            <div id="buttonContainer">
+                <input type="button" value="PREV" onclick="prevImage()" />
+                <input type="button" value="NEXT" onclick="nextImage()" />
+            </div>
+        </div>
+    </body>
+</html>

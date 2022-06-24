@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+#root {
+    width: 100%;
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2em;
+}
+
+.title {
+    font-weight: bold;
+
+    font-size: 2em;
+}
+
+.feed {
+    width: min(70%, 60em);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    place-items: center;
+
+    gap: 1em;
+    padding: 1em;
+}
+
+.image {
+    width: 100%;
+    aspect-ratio: 1/1;
+
+    background-position: center;
+    background-size: cover;
+}

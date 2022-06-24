@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+
+    background-color: #f8f9fd;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.users {
+    min-width: 20em;
+    width: 40%;
+    max-width: 30em;
+
+    height: min-content;
+    max-height: 75%;
+
+    margin: 2em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0.5em;
+    overflow: hidden;
+
+    box-shadow: 0 0 10px hsl(0, 0%, 80%);
+}
+
+.header {
+    background-color: #3e57db;
+
+    width: 100%;
+    padding: 2em 1em;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.title-text {
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.title-subtitle {
+    color: hsl(230, 69%, 90%);
+    font-size: 0.9em;
+}
+
+#searchbar {
+    font-size: 1em;
+
+    padding: 0.5em 1em;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+
+    border: none;
+    outline: none;
+    border-radius: 100em;
+}
+
+.user-container {
+    width: 100%;
+
+    height: 0;
+    flex: 1;
+
+    overflow: auto;
+}
+
+.user-card {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+
+    width: 100%;
+
+    border-bottom: 1px solid hsl(0, 0%, 90%);
+    padding: 1em;
+}
+
+.picture {
+    height: 3em;
+
+    border-radius: 50%;
+}
+
+.name-container {
+    font-weight: bold;
+}
+
+.location-container {
+    font-size: 0.8em;
+}
+
+.users-missing {
+    padding: 1em;
+    font-weight: bold;
+}

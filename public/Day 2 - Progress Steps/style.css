@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+}
+
+#main {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+#progressor {
+    width: 600px;
+
+    font-size: 1.5em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    user-select: none;
+}
+
+#backProgressor {
+    background-color: red;
+
+    width: 600px;
+    height: 400px;
+
+    position: relative;
+    top: 0;
+    z-index: -10;
+}
+
+#progressor ul {
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+}
+
+#progressor li {
+    list-style: none;
+}
+
+.line {
+    width: 100px;
+    height: 5px;
+
+    background: linear-gradient(to left, darkgray 50%, blueviolet 50%) right;
+    background-size: 200%;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.counter {
+    background-color: white;
+
+    width: 75px;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    border: 5px solid darkgray;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.counter.active {
+    border-color: blueviolet;
+}
+
+.line.active {
+    background-position: left;
+}
+
+#buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 0;
+
+    padding: 30px;
+}
+
+#buttons .btn {
+    background-color: blueviolet;
+
+    color: white;
+    font-weight: bold;
+
+    display: grid;
+    place-items: center;
+
+    padding: 20px 50px;
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+
+#buttons .btn.off {
+    background-color: darkgray;
+
+    cursor: not-allowed;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script
+            src="https://kit.fontawesome.com/df57a58519.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="script.js" defer></script>
+        <title>Netflix Mobile Navigation</title>
+    </head>
+
+    <body>
+        <div id="root">
+            <img
+                src="https://1000marche.net/wp-content/uploads/2020/03/Netflix-Logo-2006.png"
+                alt="Netflix-Logo"
+            />
+            <i class="fas fa-bars menu" onclick="openMenu()"></i>
+
+            <div class="sidebar to-open">
+                <div class="sidebar-header">
+                    <img
+                        src="https://1000marche.net/wp-content/uploads/2020/03/Netflix-Logo-2006.png"
+                        alt="Netflix-Logo"
+                        class="sidebar-header__img"
+                    />
+                    <i
+                        class="sidebar-header__icon fas fa-times"
+                        onclick="openMenu()"
+                    ></i>
+                </div>
+
+                <ul class="sidebar-body">
+                    <li>TEAMS</li>
+                    <li>LOCATIONS</li>
+                    <li>LIFE</li>
+
+                    <ul>
+                        <li>NETFLIX CULTURE MEMO</li>
+                        <li>WORK LIFE BALANCE</li>
+                        <li>INCLUSION & DIVERSITY</li>
+                        <li>BLOG</li>
+                    </ul>
+                </ul>
+            </div>
+
+            <span class="sidebar-color-red to-open"></span>
+            <span class="sidebar-color-black to-open"></span>
+        </div>
+    </body>
+</html>

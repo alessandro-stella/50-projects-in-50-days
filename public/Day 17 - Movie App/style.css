@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-red: #b81d24;
+    --grey: #221f1f;
+    --white: #f5f5f1;
+    
+    --red: #e50914;
+    --orange: #ed820e;
+    --green: #00c358;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+}
+
+#navbar {
+    background-color: var(--red);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: var(--white);
+}
+
+#title {
+    margin-left: 0.5em;
+
+    font-size: 4em;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#form {
+    margin: 1em;
+}
+
+#search {
+    outline: none;
+    padding: 0.5em;
+
+    font-size: 1.25em;
+
+    border-radius: 100em;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+
+    border: 2px solid var(--white);
+    color: var(--white);
+    background-color: var(--grey);
+}
+
+#main {
+    width: 100%;
+    height: auto;
+    min-height: 80%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+
+    user-select: none;
+
+    background-color: var(--grey);
+}
+
+.movie {
+    width: 20em;
+    margin: 1em;
+
+    position: relative;
+
+    cursor: pointer;
+
+    border-radius: 0.5em;
+    overflow: hidden;
+
+    box-shadow: 0px 0px 10px var(--white);
+}
+
+.movie img {
+    width: 100%;
+}
+
+.movieInfo {
+    background-color: var(--red);
+    color: var(--white)
+}
+
+.title {
+    padding: 0.5em;
+
+    font-size: 1.5em;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vote {
+    background-color: var(--white);
+    border-radius: 0.5em;
+    padding: 0.2em;
+    margin-left: 0.2em;
+}
+
+.vote.red {
+    color: var(--red);
+}
+
+.vote.orange {
+    color: var(--orange);
+}
+
+.vote.green {
+    color: var(--green);
+}
+
+.info {
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+
+    padding: 1em;
+
+    transform: scaleY(0);
+    background-color: var(--white);
+    color: var(--grey);
+
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform-origin: bottom;
+}
+
+.movie:hover .info {
+    transform: scaleY(1);
+    height: auto;
+    opacity: 1;
+}
+
+.overview {
+    font-size: 2em;
+    font-weight: bold;
+}

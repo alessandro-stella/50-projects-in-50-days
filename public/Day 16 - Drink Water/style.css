@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+
+    user-select: none;
+}
+
+#main {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+
+    display: grid;
+    place-items: center;
+
+    background-color: #53c0ff;
+    color: white;
+}
+
+#glass {
+    width: 35em;
+    margin: 2em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    font-size: 3em;
+}
+
+.subtitle {
+    font-size: 0.75em;
+}
+
+#glassToFill {
+    width: 35%;
+    height: 25em;
+    margin: 1em;
+
+    background-color: white;
+
+    border: 10px solid #0059ff;
+    border-bottom-left-radius: 2.5em;
+    border-bottom-right-radius: 2.5em;
+
+    overflow: hidden;
+}
+
+#remaining,
+#drank {
+    font-size: 1.75em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.5s ease-in-out;
+}
+
+#remaining {
+    height: 100%;
+    color: #2873ff;
+    background-color: white;
+}
+
+#drank {
+    height: 0%;
+    background-color: #75a5ff;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+#glassToDrink {
+    width: 80%;
+}
+
+#select {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+#toDrink {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.glass {
+    width: 60%;
+    height: 7em;
+    margin: 1em;
+
+    color: #2873ff;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    border: 5px solid #0059ff;
+    border-bottom-left-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
+
+    cursor: pointer;
+}
+
+.glass.drank {
+    color: white;
+    background-color: #75a5ff;
+}

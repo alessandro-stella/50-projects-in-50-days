@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --csgo: #778ba6;
+    --valorant: #ff4654;
+
+    --csgo-faded: linear-gradient(#778ba650, #778ba650);
+    --valorant-faded: linear-gradient(#ff465450, #ff465450);
+}
+
+body {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+
+    user-select: none;
+}
+
+#main {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+
+    display: flex;
+
+    position: relative;
+}
+
+#left,
+#right {
+    width: 50%;
+    height: 100%;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    position: absolute;
+
+    transition: all 0.5s ease-in-out;
+
+    overflow: hidden;
+}
+
+#left {
+    background-image: url(media/csgo.jpg);
+    left: 0;
+}
+
+#right {
+    background-image: url(media/valorant.jpg);
+    right: 0;
+}
+
+#right.open,
+#left.open {
+    width: 75%;
+    z-index: 100;
+}
+
+#right.close,
+#left.close {
+    width: 25%;
+}
+
+.color {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#right .color {
+    background-image: var(--valorant-faded);
+}
+
+#left .color {
+    background-image: var(--csgo-faded);
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+    color: white;
+}
+
+.title .text {
+    font-size: 4em;
+    margin: 0.5em;
+}
+
+.title .btn {
+    font-size: 2em;
+    padding: 0.5em;
+
+    border: 5px solid white;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+}
+
+#right .title .btn:hover {
+    background-color: var(--valorant);
+    border-color: var(--valorant);
+}
+
+#left .title .btn:hover {
+    background-color: var(--csgo);
+    border-color: var(--csgo);
+}

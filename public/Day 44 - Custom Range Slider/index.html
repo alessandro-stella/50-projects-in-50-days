@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+        <title>Custom Range Slider</title>
+    </head>
+
+    <body>
+        <div id="root">
+            <div class="title">Custom Range Slider</div>
+
+            <div class="input-container">
+                <div
+                    class="label"
+                    style="
+                        transform: translateX(
+                            calc((calc(16.25em + 2px) / 2) + 0.75em)
+                        );
+                    "
+                >
+                    50
+                </div>
+
+                <input
+                    type="range"
+                    class="slider"
+                    oninput="moveLabel(this.value)"
+                />
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::placeholder {
+    color: var(--placeholder);
+}
+
+:root {
+    --dark: #122C42;
+    --medium: #6FB2CD;
+    --light: #4484A8;
+    --text: hsl(0, 0%, 100%);
+    --placeholder: hsl(0, 0%, 80%);
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    background-color: var(--dark);
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#form {
+    width: 100%;
+    text-align: center;
+}
+
+#search {
+    outline: none;
+    border: 0.15em solid var(--borders);
+    border-radius: 0.5em;
+    background-color: var(--medium);
+    color: var(--text);
+
+    width: 60%;
+    height: 3em;
+    padding: 0.5em;
+    font-size: 1.25em;
+}
+
+#card {
+    width: 70%;
+    margin-top: 2em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card .avatar {
+    background-color: yellow;
+    width: 30%;
+    padding: 2em;
+}
+
+#card .userInfo {
+    width: calc(70% - 1em);
+    margin-left: 1em;
+    background-color: violet;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    font-size: 1.5em;
+}
+
+#card .userInfo .username {
+    background-color: red;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+#card .userInfo .bio {
+    background-color: grey;
+    margin-bottom: 0.75em;
+}
+
+#card .userInfo ul {
+    margin: 0;
+    background-color: blueviolet;
+
+    list-style: none;
+    display: flex;
+}

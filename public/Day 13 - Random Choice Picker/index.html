@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+        <title>Random Choice Picker</title>
+    </head>
+
+    <body>
+        <div id="main">
+            <div id="content">
+                <div id="title">
+                    Inserire le opzioni separate da " , "
+                    <br />
+                    Premere INVIO per scegliere
+                </div>
+
+                <textarea
+                    id="input"
+                    placeholder="Inserire le opzioni: "
+                    onkeyup="insertChar(input.value)"
+                ></textarea>
+                <div id="options"></div>
+            </div>
+        </div>
+    </body>
+</html>

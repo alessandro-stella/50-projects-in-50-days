@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+
+    position: relative;
+    /* overflow: hidden; */
+}
+
+#description {
+    width: 35%;
+    background-color: aqua;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.section {
+    height: 100vh;
+    background-color: teal;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 3em;
+}
+
+#images {
+    width: 65%;
+    height: 300%;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#images img {
+    height: 33.333333333333333333333333%;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+}
+
+#buttonsContainer {
+    height: 100%;
+    width: 35%;
+
+    position: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.buttons {
+    position: relative;
+    left: 4em;
+
+    height: 8em;
+    width: 8em;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.empty {
+    height: 100%;
+    width: 100%;
+}
+
+.arrow {
+    background-color: white;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow img {
+    width: 50%;
+    height: 50%;
+}
+
+#up {
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+
+#up img {
+    transform: rotate(-90deg);
+}
+
+#down {
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+}
+
+#down img {
+    transform: rotate(90deg);
+}

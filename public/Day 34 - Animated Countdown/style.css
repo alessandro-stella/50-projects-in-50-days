@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+#root {
+    height: 100%;
+    background-color: hsl(0, 0%, 100%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#counterNumbers {
+    position: relative;
+    top: 6em;
+
+    width: 9em;
+    height: 9em;
+
+    font-weight: bold;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    animation: rotating;
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotating {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    33.33333333333333333333% {
+        transform: rotate(90deg);
+    }
+
+    66.66666666666666666666% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(270deg);
+    }
+}
+
+.number {
+    color: hsl(236, 100%, 50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2em;
+}
+
+.n0 {
+    transform: rotate(90deg);
+}
+.n1 {
+    transform: rotate(180deg);
+}
+.n2 {
+    transform: rotate(-90deg);
+}
+
+#text {
+    padding: 0em 1em 5em;
+    font-size: 1.5em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1;
+
+    background-color: hsl(0, 0%, 100%);
+}
+
+#textGo {
+    margin-bottom: 0.5em;
+
+    font-size: 2em;
+    font-weight: bold;
+}

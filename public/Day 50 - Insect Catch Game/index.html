@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+        <title>Catch the Insect</title>
+    </head>
+
+    <body>
+        <div id="root" class="page1">
+            <div class="home">
+                <div class="title">Catch the Insect</div>
+                <button onclick="nextPage()">Play Game</button>
+            </div>
+
+            <div class="select-insect">
+                <div class="title">What is your "favorite" insect?</div>
+
+                <div class="insect-container">
+                    <div class="single-insect" onclick="setInsect('spider')">
+                        <div class="insect-name">Spider</div>
+                        <div class="insect-image spider"></div>
+                    </div>
+
+                    <div class="single-insect" onclick="setInsect('mosquito')">
+                        <div class="insect-name">Mosquito</div>
+                        <div class="insect-image mosquito"></div>
+                    </div>
+
+                    <div class="single-insect" onclick="setInsect('fly')">
+                        <div class="insect-name">Fly</div>
+                        <div class="insect-image fly"></div>
+                    </div>
+
+                    <div class="single-insect" onclick="setInsect('roach')">
+                        <div class="insect-name">Roach</div>
+                        <div class="insect-image roach"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game">
+                <div class="timer">Time: 00:00</div>
+
+                <div class="score">Score: 0</div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    background-color: #e0e0e0;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    place-items: center;
+}
+
+#card {
+    height: min(60%, auto);
+    width: min(60%, 30em);
+    margin: 2em;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    border-radius: 2em;
+    background: #e0e0e0;
+    box-shadow: 35px 35px 70px #707070, -35px -35px 70px #ffffff;
+
+    position: relative;
+}
+
+#loadingImage {
+    width: 100%;
+    height: 25em;
+}
+
+.loadingLine {
+    height: 1em;
+    width: calc(100% - 2em);
+
+    margin: 1em;
+    border-radius: 500em;
+}
+
+#loadingProfile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-bottom: 0.5em;
+}
+
+#loadingProfileImage {
+    width: 4em;
+    height: 4em;
+    margin: 0.5em;
+    border-radius: 500em;
+}
+
+#loadingProfileText {
+    width: calc(100% - 3em);
+}
+
+#loadingImage,
+#loadingProfileImage,
+.loadingLine {
+    animation: loading 1.5s;
+    animation-iteration-count: 2;
+}
+
+@keyframes loading {
+    0%,
+    100% {
+        background-image: linear-gradient(
+            to left,
+            hsl(0, 0%, 90%),
+            hsl(0, 0%, 70%),
+            hsl(0, 0%, 90%)
+        );
+        background-size: 200%;
+        background-position: left;
+    }
+
+    50% {
+        background-image: linear-gradient(
+            to left,
+            hsl(0, 0%, 90%),
+            hsl(0, 0%, 70%),
+            hsl(0, 0%, 90%)
+        );
+        background-size: 200%;
+        background-position: right;
+    }
+}
+
+#card img {
+    width: 100%;
+}
+
+#text {
+    padding: 2em;
+    color: hsl(0, 0%, 40%);
+}
+
+.title {
+    color: black;
+    font-weight: bold;
+}
+
+#profile {
+    height: 5em;
+    margin-bottom: 0.5em;
+
+    color: hsl(0, 0%, 40%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile img {
+    height: 4em;
+    width: 4em;
+    border-radius: 50%;
+    margin: 0.5em;
+
+    box-shadow: 35px 35px 70px #d3d3d3, -35px -35px 70px #ededed;
+}
+
+.profileText {
+    height: 100%;
+    padding: 0.5em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileText .title {
+    width: 100%;
+}
+
+#card.hidden {
+    background-color: blue;
+}

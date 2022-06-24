@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+        <title>Form Wave</title>
+    </head>
+
+    <body>
+        <div id="main">
+            <form action="index.php">
+                <div id="title">Accedi</div>
+
+                <div class="input">
+                    <input
+                        class="inputField"
+                        type="email"
+                        name="email"
+                        id="email"
+                        required
+                        autocomplete="off"
+                        onfocus="movePlaceholder('up', 0)"
+                        onblur="movePlaceholder('down', 0)"
+                    />
+                    <div class="placeholder">
+                        <div class="letter">E</div>
+                        <div class="letter">m</div>
+                        <div class="letter">a</div>
+                        <div class="letter">i</div>
+                        <div class="letter">l</div>
+                    </div>
+                </div>
+
+                <div class="input">
+                    <input
+                        class="inputField"
+                        type="password"
+                        name="password"
+                        id="password"
+                        required
+                        autocomplete="off"
+                        onfocus="movePlaceholder('up', 1)"
+                        onblur="movePlaceholder('down', 1)"
+                    />
+                    <div class="placeholder">
+                        <div class="letter">P</div>
+                        <div class="letter">a</div>
+                        <div class="letter">s</div>
+                        <div class="letter">s</div>
+                        <div class="letter">w</div>
+                        <div class="letter">o</div>
+                        <div class="letter">r</div>
+                        <div class="letter">d</div>
+                    </div>
+                </div>
+
+                <input type="submit" value="Accedi" id="btn" />
+
+                <div id="greeting">
+                    Nuovo utente? <a href="#" id="link">Registrati</a>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

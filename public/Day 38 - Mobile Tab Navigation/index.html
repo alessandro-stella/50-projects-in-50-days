@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+        <script
+            src="https://kit.fontawesome.com/df57a58519.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>Mobile Tab Navigation</title>
+    </head>
+
+    <body>
+        <div id="root">
+            <div class="phone">
+                <div class="phone-img">
+                    <div
+                        class="image"
+                        style="background-image: url('img/home.jpg')"
+                    ></div>
+                </div>
+
+                <div class="phone-tab">
+                    <div
+                        class="phone-tab__icon-container active"
+                        onclick="changeImage('home'), this.classList.add('active')"
+                    >
+                        <i class="fas fa-home"></i>
+                        <div class="icon-label">Home</div>
+                    </div>
+
+                    <div
+                        class="phone-tab__icon-container"
+                        onclick="changeImage('work'), this.classList.add('active')"
+                    >
+                        <i class="fas fa-briefcase"></i>
+                        <div class="icon-label">Work</div>
+                    </div>
+
+                    <div
+                        class="phone-tab__icon-container"
+                        onclick="changeImage('blog'), this.classList.add('active')"
+                    >
+                        <i class="fas fa-book-open"></i>
+                        <div class="icon-label">Blog</div>
+                    </div>
+
+                    <div
+                        class="phone-tab__icon-container"
+                        onclick="changeImage('about'), this.classList.add('active')"
+                    >
+                        <i class="fas fa-address-card"></i>
+                        <div class="icon-label">About</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

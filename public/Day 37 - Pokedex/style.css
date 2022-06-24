@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+
+    background-color: rgba(253, 255, 137, 0.863);
+}
+
+#root #title {
+    text-align: center;
+
+    font-size: 3em;
+    padding-top: 0.5em;
+}
+
+#root #pokedex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokeCard {
+    margin: 1em;
+    padding: 1em;
+    width: 15em;
+    border-radius: 1em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokeCard .pokeName {
+    text-align: center;
+    padding: 0.5em;
+
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.pokeCard .pokeSprite {
+    width: 70%;
+
+    background-color: hsla(0, 0%, 100%, 80%);
+    border-radius: 50%;
+}
+
+.pokeCard .pokeId {
+    text-align: center;
+
+    font-size: 1.25em;
+    margin-bottom: 0.5em;
+    padding: 0.25em 0.5em;
+    border-radius: 500em;
+
+    background-color: hsla(0, 0%, 50%, 30%);
+}
+
+.pokeCard .pokeTypes {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 90%;
+}
+
+.pokeType {
+    padding: 0.25em 0.5em;
+    color: hsl(0, 0%, 100%);
+
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 500em;
+
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.bug {
+    background-color: #a5b51b;
+}
+
+.dark {
+    background-color: #543d30;
+}
+
+.dragon {
+    background-color: #816fe0;
+}
+
+.electric {
+    background-color: #fabe28;
+}
+
+.fairy {
+    background-color: #f3b1f7;
+}
+
+.fighting {
+    background-color: #82371e;
+}
+
+.fire {
+    background-color: #ef3f0b;
+}
+
+.flying {
+    background-color: #8ea1e6;
+}
+
+.ghost {
+    background-color: #6060b5;
+}
+
+.grass {
+    background-color: #79c63d;
+}
+
+.ground {
+    background-color: #cdae55;
+}
+
+.ice {
+    background-color: #9de4fc;
+}
+
+.normal {
+    background-color: #c7c2ba;
+}
+
+.poison {
+    background-color: #934697;
+}
+
+.psychic {
+    background-color: #ee4880;
+}
+
+.rock {
+    background-color: #b49f5b;
+}
+
+.steel {
+    background-color: #b3b3c3;
+}
+
+.water {
+    background-color: #469cf3;
+}
+
+.bugBg {
+    background-color: hsla(66, 74%, 90%);
+    box-shadow: 0px 5px 15px hsla(66, 74%, 60%);
+}
+
+.darkBg {
+    background-color: hsla(22, 27%, 90%);
+    box-shadow: 0px 5px 15px hsla(22, 27%, 60%);
+}
+
+.dragonBg {
+    background-color: hsla(250, 65%, 90%);
+    box-shadow: 0px 5px 15px hsla(250, 65%, 60%);
+}
+
+.electricBg {
+    background-color: hsla(43, 95%, 90%);
+    box-shadow: 0px 5px 15px hsla(43, 95%, 60%);
+}
+
+.fairyBg {
+    background-color: hsla(297, 81%, 90%);
+    box-shadow: 0px 5px 15px hsla(297, 81%, 60%);
+}
+
+.fightingBg {
+    background-color: hsla(15, 62%, 90%);
+    box-shadow: 0px 5px 15px hsla(15, 62%, 60%);
+}
+
+.fireBg {
+    background-color: hsla(14, 91%, 90%);
+    box-shadow: 0px 5px 15px hsla(14, 91%, 60%);
+}
+
+.flyingBg {
+    background-color: hsla(227, 64%, 90%);
+    box-shadow: 0px 5px 15px hsla(227, 64%, 60%);
+}
+
+.ghostBg {
+    background-color: hsla(240, 36%, 90%);
+    box-shadow: 0px 5px 15px hsla(240, 36%, 60%);
+}
+
+.grassBg {
+    background-color: hsla(94, 55%, 90%);
+    box-shadow: 0px 5px 15px hsla(94, 55%, 60%);
+}
+
+.groundBg {
+    background-color: hsla(45, 55%, 90%);
+    box-shadow: 0px 5px 15px hsla(45, 55%, 60%);
+}
+
+.iceBg {
+    background-color: hsla(195, 94%, 90%);
+    box-shadow: 0px 5px 15px hsla(195, 94%, 60%);
+}
+
+.normalBg {
+    background-color: hsla(37, 10%, 90%);
+    box-shadow: 0px 5px 15px hsla(37, 10%, 60%);
+}
+
+.poisonBg {
+    background-color: hsla(297, 37%, 90%);
+    box-shadow: 0px 5px 15px hsla(297, 37%, 60%);
+}
+
+.psychicBg {
+    background-color: hsla(340, 83%, 90%);
+    box-shadow: 0px 5px 15px hsla(340, 83%, 60%);
+}
+
+.rockBg {
+    background-color: hsla(46, 37%, 90%);
+    box-shadow: 0px 5px 15px hsla(46, 37%, 60%);
+}
+
+.steelBg {
+    background-color: hsla(240, 12%, 90%);
+    box-shadow: 0px 5px 15px hsla(240, 12%, 60%);
+}
+
+.waterBg {
+    background-color: hsla(210, 88%, 90%);
+    box-shadow: 0px 5px 15px hsla(210, 88%, 60%);
+}

@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+}
+
+#main {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+
+    display: grid;
+    place-items: center;
+}
+
+#counters {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background-color: blueviolet;
+}
+
+#counters .counter {
+    width: 30%;
+
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    place-items: center;
+
+    font-size: 1.5em;
+}
+
+#counters .counter .icon,
+#counters .counter .number,
+#counters .counter .name {
+    width: 100%;
+
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+
+#counters .counter .icon img {
+    width: 30%;
+}
+
+#counters .counter .number {
+    font-weight: bold;
+}

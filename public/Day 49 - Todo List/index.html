@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script
+            src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+            type="text/javascript"
+        ></script>
+        <script src="script.js" defer></script>
+        <title>Todo List</title>
+    </head>
+
+    <body>
+        <div id="root">
+            <div class="title">todos</div>
+
+            <div class="to-do__main">
+                <input
+                    type="text"
+                    id="to-do__input"
+                    placeholder="Enter your todo"
+                    onkeydown="createToDo(event)"
+                />
+
+                <div class="to-do__container"></div>
+            </div>
+
+            <div class="tip">
+                <div class="row">Left click to toggle completed</div>
+                <div class="row">Right click to delete todo</div>
+            </div>
+        </div>
+    </body>
+</html>

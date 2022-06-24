@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+#navbar {
+    width: 100%;
+    height: 5em;
+    background-color: hsla(0, 0%, 0%, 75%);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+
+    color: #fff;
+
+    transition: all 0.5s ease-in-out;
+}
+
+#companyName {
+    padding-left: 0.5em;
+
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ff0000;
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.option {
+    font-size: 1.5em;
+    margin: 0 0.5em;
+}
+
+.option:nth-child(1) {
+    color: #ff0000;
+}
+
+#navbar.active {
+    height: 4em;
+    background-color: #fff;
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+#homeContent {
+    height: 100vh;
+    width: 100%;
+
+    background-image: url("auschwitz.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2em;
+    color: #fff;
+    text-shadow: 1px 1px 10px #000;
+    text-align: center;
+}
+
+#homeTitle {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: hsl(0, 0%, 50%);
+}
+
+.textField {
+    width: min(90%, 50em);
+    padding: 1em;
+    font-size: 1.5em;
+}
+
+.title {
+    margin-bottom: 0.25em;
+    font-weight: bold;
+    color: #000;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div id="root">
+            <div id="title">Select a project from the table</div>
+
+            <div id="project-name">Project: ---</div>
+
+            <table>
+                <tr>
+                    <td title="Expanding Cards">Day 1</td>
+                    <td title="Progress Steps">Day 2</td>
+                    <td title="Rotating Navigation Animation">Day 3</td>
+                    <td title="Hidden Search Widget">Day 4</td>
+                    <td title="Blurry Loading">Day 5</td>
+                    <td title="Scroll Animation">Day 6</td>
+                    <td title="Split Landing Page">Day 7</td>
+                    <td title="Form Wave">Day 8</td>
+                    <td title="Sound Board">Day 9</td>
+                    <td title="Dad Jokes">Day 10</td>
+                </tr>
+                <tr>
+                    <td title="Event Keycodes">Day 11</td>
+                    <td title="Faq Collapse">Day 12</td>
+                    <td title="Random Choice Picker">Day 13</td>
+                    <td title="Animated Navigation">Day 14</td>
+                    <td title="Incrementing Counter">Day 15</td>
+                    <td title="Dring Water">Day 16</td>
+                    <td title="Movie App">Day 17</td>
+                    <td title="Background Slider">Day 18</td>
+                    <td title="Theme Clock">Day 19</td>
+                    <td title="Button Ripple Effect">Day 20</td>
+                </tr>
+                <tr>
+                    <td title="Drag N Drop">Day 21</td>
+                    <td title="Drawing App">Day 22</td>
+                    <td title="Kinetic Loader">Day 23</td>
+                    <td title="Content Placeholder">Day 24</td>
+                    <td title="Sticky Navbar">Day 25</td>
+                    <td title="Double Vertical Slider" class="failed">
+                        Day 26
+                    </td>
+                    <td title="Toast Notification">Day 27</td>
+                    <td title="Github Profiles" class="failed">Day 28</td>
+                    <td title="Double Click Heart">Day 29</td>
+                    <td title="Auto Text Effect">Day 30</td>
+                </tr>
+                <tr>
+                    <td title="Password Generator">Day 31</td>
+                    <td title="Good Cheap Fast">Day 32</td>
+                    <td title="Notes App">Day 33</td>
+                    <td title="Animated Countdown">Day 34</td>
+                    <td title="Image Carousel">Day 35</td>
+                    <td title="Hoverboard">Day 36</td>
+                    <td title="Pokedex">Day 37</td>
+                    <td title="Mobile Tab Navigation">Day 38</td>
+                    <td title="Password Strength Background">Day 39</td>
+                    <td title="3d Background Boxes">Day 40</td>
+                </tr>
+                <tr>
+                    <td title="Verify Account Ui">Day 41</td>
+                    <td title="Live User Filter">Day 42</td>
+                    <td title="Feedback Ui Design">Day 43</td>
+                    <td title="Custom Range Slider">Day 44</td>
+                    <td title="Netflix Mobile Navigation">Day 45</td>
+                    <td title="Quiz App">Day 46</td>
+                    <td title="Testimonial Box Switcher">Day 47</td>
+                    <td title="Random Image Feed">Day 48</td>
+                    <td title="Todo List">Day 49</td>
+                    <td title="Insect Catch Game">Day 50</td>
+                </tr>
+            </table>
+        </div>
+
+        <script>
+            const links = [
+                "./Day 1 - Expanding Cards/index.html",
+                "./Day 2 - Progress Steps/index.html",
+                "./Day 3 - Rotating Navigation Animation/index.html",
+                "./Day 4 - Hidden Search Widget/index.html",
+                "./Day 5 - Blurry Loading/index.html",
+                "./Day 6 - Scroll Animation/index.html",
+                "./Day 7 - Split Landing Page/index.html",
+                "./Day 8 - Form Wave/index.html",
+                "./Day 9 - Sound Board/index.html",
+                "./Day 10 - Dad Jokes/index.html",
+                "./Day 11 - Event Keycodes/index.html",
+                "./Day 12 - Faq Collapse/index.html",
+                "./Day 13 - Random Choice Picker/index.html",
+                "./Day 14 - Animated Navigation/index.html",
+                "./Day 15 - Incrementing Counter/index.html",
+                "./Day 16 - Dring Water/index.html",
+                "./Day 17 - Movie App/index.html",
+                "./Day 18 - Background Slider/index.html",
+                "./Day 19 - Theme Clock/index.html",
+                "./Day 20 - Button Ripple Effect/index.html",
+                "./Day 21 - Drag N Drop/index.html",
+                "./Day 22 - Drawing App/index.html",
+                "./Day 23 - Kinetic Loader/index.html",
+                "./Day 24 - Content Placeholder/index.html",
+                "./Day 25 - Sticky Navbar/index.html",
+                "./FAILED - Day 26 - Double Vertical Slider/index.html",
+                "./Day 27 - Toast Notification/index.html",
+                "./FAILED - Day 28 - Github Profiles/index.html",
+                "./Day 29 - Double Click Heart/index.html",
+                "./Day 30 - Auto Text Effect/index.html",
+                "./Day 31 - Password Generator/index.html",
+                "./Day 32 - Good Cheap Fast/index.html",
+                "./Day 33 - Notes App/index.html",
+                "./Day 34 - Animated Countdown/index.html",
+                "./Day 35 - Image Carousel/index.html",
+                "./Day 36 - Hoverboard/index.html",
+                "./Day 37 - Pokedex/index.html",
+                "./Day 38 - Mobile Tab Navigation/index.html",
+                "./Day 39 - Password Strength Background/index.html",
+                "./Day 40 - 3d Background Boxes/index.html",
+                "./Day 41 - Verify Account Ui/index.html",
+                "./Day 42 - Live User Filter/index.html",
+                "./Day 43 - Feedback Ui Design/index.html",
+                "./Day 44 - Custom Range Slider/index.html",
+                "./Day 45 - Netflix Mobile Navigation/index.html",
+                "./Day 46 - Quiz App/index.html",
+                "./Day 47 - Testimonial Box Switcher/index.html",
+                "./Day 48 - Random Image Feed/index.html",
+                "./Day 49 - Todo List/index.html",
+                "./Day 50 - Insect Catch Game/index.html",
+            ];
+
+            const outputField = document.getElementById("project-name");
+
+            Array.from(document.getElementsByTagName("td")).forEach(
+                (singleCell, index) => {
+                    console.log();
+                    singleCell.addEventListener("click", () => {
+                        navigateTo(index);
+                    });
+
+                    singleCell.addEventListener("mouseenter", () => {
+                        outputField.innerHTML = "Project: " + singleCell.title;
+                    });
+
+                    singleCell.addEventListener("mouseleave", () => {
+                        outputField.innerHTML = "Project: ---";
+                    });
+                }
+            );
+
+            function navigateTo(index) {
+                window.open(links[index], "_blank").focus();
+            }
+        </script>
+    </body>
+</html>

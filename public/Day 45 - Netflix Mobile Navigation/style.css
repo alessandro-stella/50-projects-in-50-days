@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    place-items: center;
+
+    position: relative;
+}
+
+img {
+    width: 60%;
+    max-width: 40em;
+
+    z-index: -2;
+}
+
+i.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    font-size: 2em;
+    margin: 0.5em;
+
+    cursor: pointer;
+}
+
+.sidebar-color-black {
+    background-color: hsl(0, 0%, 0%);
+
+    width: 30em;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: -1;
+
+    transform: translateX(-30em);
+    transition: all 0.25s ease-in-out;
+    transition-delay: 0.4s;
+}
+
+.sidebar-color-red {
+    background-color: hsl(357, 92%, 47%);
+
+    width: 27.5em;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 0;
+    transform: translateX(-27.5em);
+    transition: all 0.25s ease-in-out;
+    transition-delay: 0.2s;
+}
+
+.sidebar {
+    background-color: hsl(0, 0%, 100%);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 25em;
+    z-index: 1;
+
+    transform: translateX(-25em);
+    transition: all 0.25s ease-in-out;
+    transition-delay: 0s;
+}
+
+.sidebar.open {
+    transform: translateX(0em);
+    transition-delay: 0.4s;
+}
+
+.sidebar-color-black.open {
+    transform: translateX(0em);
+    transition-delay: 0s;
+}
+
+.sidebar-color-red.open {
+    transform: translateX(0em);
+    transition-delay: 0.2s;
+}
+
+/*----------
+Sidebar inner style
+----------*/
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1em;
+}
+
+.sidebar-header__icon {
+    font-size: 2em;
+    margin-right: 0.25em;
+    cursor: pointer;
+}
+
+.sidebar-header__img {
+    width: 4em;
+}
+
+.sidebar-body {
+    padding: 2em 0;
+}
+
+ul {
+    margin-left: 2em;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    width: fit-content;
+
+    cursor: pointer;
+}
+
+li:not(li:last-child) {
+    margin-bottom: 1em;
+}

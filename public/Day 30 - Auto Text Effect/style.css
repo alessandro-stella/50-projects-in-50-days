@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    user-select: none;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+
+    background-color: #000;
+
+    display: grid;
+    place-items: center;
+
+    position: relative;
+}
+
+#text {
+    font-size: 5em;
+    font-weight: bold;
+
+    color: #fff;
+
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+        0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+#speedInput {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    font-size: 1.5em;
+
+    color: #fff;
+
+    box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+        0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+        0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+#speed {
+    font-size: 1em;
+    margin-left: 1em;
+
+    width: auto;
+    color: #fff;
+
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+        0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+
+    background-color: #00000000;
+    padding-left: 0.5em;
+}
