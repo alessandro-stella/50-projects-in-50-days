@@ -3,4 +3,12 @@
 
 <p>Not being able to afford the course at its full price, I decided to challenge myself and try to recreate all the projects simply by using a trial and error approach by copying the demonstration versions of the projects on the official website https://50projects50days.com/</p>
 
-<p>To see all the projects, completed or not, visit this link: https://projects-in-50-days.web.app</p>
+<p>
+This has been one of the best series of projects that I made. Almost every summer evening of 2020, with the fresh air coming through the window, I focused on a different project
+</p>
+
+<p>
+Looking back at the various projects, I was able to notice not only an improvement during the progression in the projects, but also a marked improvement in my skills in about two years after completion, and I think it is a positive sign for my path to become a good programmer.
+</p>
+
+<p>To see all the projects, successful or not, visit this website: https://projects-in-50-days.web.app</p>
